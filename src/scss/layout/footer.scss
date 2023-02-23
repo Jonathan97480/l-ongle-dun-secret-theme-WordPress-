@@ -1,0 +1,72 @@
+.lds-footer{
+    background-color: var(--bkg-primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    gap: 4.5rem;
+    padding: 6.1rem 0;
+
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8.1rem;
+
+        @include media(medium){
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+         
+        }
+
+        &__liste{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            ul,span{
+                 display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+            }
+
+    
+        
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--color-primary);
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-family: 'Rosario', sans-serif;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        transition: all .3s;
+        width: 100%;
+        &:hover{
+            color: var(--color-tertiary);
+        }
+
+    }
+    h2{
+        font-family: 'SawarabiMincho', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: var(--color-primary);
+    }
+    &__copy{
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-family: 'Rosario', sans-serif;
+        color: var(--color-primary);
+    }
+}

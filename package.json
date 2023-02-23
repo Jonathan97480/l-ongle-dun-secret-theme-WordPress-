@@ -1,0 +1,20 @@
+{
+  "name": "themetemplatescss",
+  "version": "1.0.0",
+  "description": "template for wordpresse create theme custom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp watch"
+  },
+  "author": "Gauvin jonathan",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "license": "ISC"
+}

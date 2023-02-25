@@ -1,0 +1,47 @@
+.lds-hero{
+    margin: 0;
+    padding: 0!important;
+    background-color: rgba(0, 0, 0, 0.432);
+    .wpcp-swiper-dots{
+        display: none;
+    }
+     .wpcp-prev-button,  {
+       
+       
+        background-color: rgba(0, 0, 0, 0.43)!important;
+        position: absolute!important;
+        padding: 2rem;
+        left: 15px!important;
+        border-radius: 50%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            color: #fff!important;
+        }
+        
+        
+    } 
+    .wpcp-next-button {
+     background-color: rgba(0, 0, 0, 0.43)!important;
+        padding: 2rem;
+       display:flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute!important;
+        border-radius: 50%;
+        right: 15px!important;
+         i{
+            color: #fff!important;
+        }
+    }
+    .wpcp-carousel-section {
+        padding: 0!important;
+        margin: 0!important;
+    }
+
+    .wpcp-carousel-section{
+        max-height:503.99px ;
+        overflow: hidden;
+    }
+}

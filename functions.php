@@ -2,6 +2,7 @@
 
 
 require_once('options/customize_theme.php');
+require_once('options/contactForm/contactForm.php');
 
 
 add_action('after_setup_theme', function () {
@@ -15,14 +16,27 @@ add_action('after_setup_theme', function () {
     register_nav_menu('footer-menu', 'footer menu');
 
     /* Ajout d'une category personnaliser a l'activation du theme */
-    /* wp_insert_term(
-        'blog',
+    wp_insert_term(
+        'services',
         'category',
         array(
-            'description' => 'blog',
-            'slug' => 'blog'
+            'description' => 'Category services',
+            'slug' => 'services'
         )
-    ); */
+
+
+    );
+
+    wp_insert_term(
+        'Masque-capillaire',
+        'category',
+        array(
+            'description' => 'Category Masque capillaire',
+            'slug' => 'Masque-capillaire'
+        )
+
+
+    );
 });
 
 
@@ -31,28 +45,20 @@ add_action('after_setup_theme', function () {
 add_action('wp_enqueue_scripts', function () {
 
     /* Css */
-    wp_register_style('styleCss',  get_template_directory_uri() . '/assets/css/style.css');
-    wp_enqueue_style('styleCss');
+    wp_register_style('lds-style',  get_template_directory_uri() . '/assets/css/style.css');
+    wp_register_style('lds-slick',  get_template_directory_uri() . '/assets/js/slick/slick.css');
+    wp_register_style('lds-slick-theme',  get_template_directory_uri() . '/assets/js/slick/slick-theme.css');
+    wp_enqueue_style('lds-style');
+    wp_enqueue_style('lds-slick');
+    wp_enqueue_style('lds-slick-theme');
+
 
     /* Scripts */
-       /*Chargement asynchrone  des scripts*/
-        function add_defer_attribute($tag, $handle)
-    {
-        // ajouter les handles de mes scripts au array ci-dessous. Ici 1 scripts par exemple.
-        $scripts_to_defer = array('appJs' );
-        foreach ($scripts_to_defer as $defer_script) {
-            if (
-                $defer_script === $handle
-            ) {
-                return str_replace(' src', ' async="async" src', $tag);
-            }
-        }
-        return $tag;
-    }
- 
-    
-    
-    
-    wp_register_script('appJs',  get_template_directory_uri() . '/assets/js/script.js', [], false, true);
-    wp_enqueue_script('appJs');
+    wp_register_script('lds-appJs',  get_template_directory_uri() . '/assets/js/script.js', [], false, true);
+    wp_register_script('lds-slick-script',  get_template_directory_uri() . '/assets/js/slick/slick.min.js', [], false, true);
+    wp_register_script('lds-custom',  get_template_directory_uri() . '/assets/js/theme_customization.js', [], false, true);
+    /*  wp_enqueue_script('jquery'); */
+    wp_enqueue_script('lds-appJs');
+    wp_enqueue_script('lds-slick-script');
+    wp_enqueue_script('lds-custom');
 });

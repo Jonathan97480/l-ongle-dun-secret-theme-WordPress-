@@ -8,7 +8,7 @@ get_header();
 while (have_posts()) :
     the_post();
 ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <article class="lds-page" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
         <h1><?= the_title()  ?> </h1>

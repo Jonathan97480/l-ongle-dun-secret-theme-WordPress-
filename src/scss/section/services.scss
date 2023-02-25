@@ -1,0 +1,57 @@
+
+.lds-services{
+    background: linear-gradient(207.51deg, #EA8E93 17.12%, #E6878D 51.07%, #DA7178 86.47%);
+
+    &__content{
+        margin-top: 6.1rem;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        a{
+            text-decoration: none;
+            color: var(--text-primary-color);
+        }
+    }
+
+    &__card{
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transition: 0.3s ease-in-out;
+
+        &:hover{
+            transition: 0.3s ease-in-out;
+            scale: 1.05;
+        }
+
+        &__title{
+            display: flex;
+            
+            height: 11rem;
+           
+            align-items: center;
+            h3{
+                display: inline-block;
+                width: 100%;
+            font-size: 2rem!important;
+            font-weight: 400;
+            letter-spacing: 11%;
+             text-align: center;
+             line-height: 3.5rem;
+            }
+
+        }
+        &_pic{
+            width: 234px;
+            height: 244px;
+            object-fit: contain;
+            border-radius: 0.5rem;
+        }
+        width: 25rem;
+        height: 40rem;
+        background-color: var(--bkg-secondary-color);
+    }
+}

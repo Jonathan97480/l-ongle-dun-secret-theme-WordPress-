@@ -1,0 +1,59 @@
+.lds-appointment{
+    &__content{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4.1rem;
+        margin: auto;
+        margin-top: 6.1rem;
+        max-width: 930px;
+        
+
+        @include media(medium){
+            flex-direction: row;
+          
+        }
+
+        &__cover{
+            width: 100%;
+            max-width: 61.3rem;
+            object-fit: contain;
+            @include media(medium){
+                width: 50%;
+                
+            }
+
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 2.4rem;
+            @include media(medium){
+                width: 50%;
+                
+            }
+            div{
+                h3{
+                    width: 100%;
+                    text-align: left;
+                    font-size: 2rem;
+                    margin-bottom: 1.6rem;
+                }
+                a{
+                    width: 100%;
+                    text-align: left;
+                    font-size: 1.8rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.8rem;
+                }
+            }
+
+        }
+
+    }
+}

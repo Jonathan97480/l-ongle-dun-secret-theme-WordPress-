@@ -59,7 +59,7 @@
     }
     h2{
         font-family: 'SawarabiMincho', sans-serif;
-        font-size: 2.5rem;
+        font-size:clamp(1.8rem , 1.8rem + 1.5vw, 2.0rem);
         font-weight: 400;
         color: var(--color-primary);
     }

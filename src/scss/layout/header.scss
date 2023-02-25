@@ -37,7 +37,9 @@
             height: 8rem;
             display: flex;
             flex-direction: row;
-          
+            margin: auto;
+            justify-content: space-between;
+            max-width: 1920px;
         }
        
 
@@ -50,6 +52,8 @@
                 align-items: center;
                    @include media(medium){
                     flex-direction: row;
+                    justify-content: space-between;
+                   
                 }
                 li{
                     a{

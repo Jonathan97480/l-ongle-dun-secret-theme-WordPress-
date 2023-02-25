@@ -9,10 +9,10 @@ $pathTheme = get_template_directory_uri();
             <h2>-Navigations-</h2>
             <ul class="lds-header__content__nav__list">
                 <li><a href="<?= home_url() ?>">Accueil</a></li>
-                <li><a href="#about">À-propos</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#products">Nos produits </a></li>
-                <li><a href="#appointment">Prendre un rendez vous </a></li>
+                <li><a href="<?= home_url() . '/#about' ?>">À-propos</a></li>
+                <li><a href="<?= home_url() . '/#services' ?>">Services</a></li>
+                <li><a href="<?= home_url() . '/#products' ?>">Nos produits </a></li>
+                <li><a href="<?= home_url() . '/#appointment' ?>">Prendre un rendez vous </a></li>
                 <li>
                     <?php
 
@@ -37,16 +37,16 @@ $pathTheme = get_template_directory_uri();
         <div class="lds-footer__content__liste">
             <h2>-Réseaux sociaux- </h2>
             <span>
-                <a href="https://www.facebook.com/Alongledunsecret" target="_blank">
+                <a href="<?= get_theme_mod('facebook') ?>" target="_blank">
                     <img src="<?= $pathTheme . "./assets/images/logos_facebook.png" ?>" width="30" height="30" alt="Logo facebook">
                     Facebook
                 </a>
 
-                <a href="https://www.instagram.com/a_l_ongle_d_un_secret/?igshid=ZDdkNTZiNTM%3D" target="_blank">
+                <a href="<?= get_theme_mod('instagram') ?>" target="_blank">
                     <img src="<?= $pathTheme . "./assets/images/logo_instagram.svg" ?>" width="30" height="30" alt="Logo instagram">
                     Instagram
                 </a>
-                <a href="https://tiktok.com/@alongledunsecret" target="_blank">
+                <a href="<?= get_theme_mod('tiktok') ?>" target="_blank">
                     <img src="<?= $pathTheme . "./assets/images/logo_tiktok.webp" ?>" width="30" height="30" alt="Logo tiktok">
                     Tiktok
                 </a>
@@ -55,13 +55,13 @@ $pathTheme = get_template_directory_uri();
         <div class="lds-footer__content__liste">
             <h2>-Nous contacter -</h2>
             <span>
-                <a href="tel:+336 12 34 56 78">
+                <a href="tel:+<?= get_theme_mod('phone') ?>">
                     <img src="<?= $pathTheme . "./assets/images/logo_phone.png" ?>" width="30" height="30" alt="Logo téléphone">
-                    06 12 34 56 78
+                    <span id="phone"> <?= get_theme_mod('phone') ?></span>
                 </a>
-                <a href="mailto: example@gmail.com">
+                <a href="mailto:<?= get_theme_mod('email') ?>">
                     <img src="<?= $pathTheme . "./assets/images/logo_mail.png" ?>" width="30" height="30" alt="Logo mail">
-                    example@gmail.com
+                    <span id="email"> <?= get_theme_mod('email') ?></span>
                 </a>
             </span>
         </div>
@@ -72,5 +72,6 @@ $pathTheme = get_template_directory_uri();
 <?=
 wp_footer();
 ?>
+
 
 </html>

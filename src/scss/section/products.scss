@@ -1,0 +1,78 @@
+.lds-products{
+   background: linear-gradient(207.51deg, #EA8E93 17.12%, #E6878D 51.07%, #DA7178 86.47%);
+    .slider{
+       
+        margin-top: 6.1rem;
+        
+    }
+    .slick-track{
+       
+    
+        @include media(medium){
+            display: inline-flex;
+        justify-content: center;
+        }
+      
+    
+    }
+   &__card{
+        position: relative;
+        background-color: var(--bkg-secondary-color) ;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        max-width: 24.9rem;
+        width: 30rem;
+        min-height: 39.4rem;
+        height: 39.4rem;
+        padding: 4.9rem 1.6rem;
+        padding-bottom: 1.6rem;
+        margin: 0 3rem;
+       
+       border-radius: 0.5rem;
+      
+        img{
+            object-fit: contain;
+        }
+
+        &__logoApprouve{
+            display: inline;
+            position: absolute;
+            left: 0.8rem;
+            top:0.8rem;
+        }
+   
+     
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:2rem ;
+            &__cover{
+                width: 18.3rem;
+                height: 18.3rem;
+            }
+            div{
+                h3{
+                    text-align: center;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    line-height: 3rem;
+                    text-transform: uppercase;
+                }
+                p{
+                    text-align: center;
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    line-height: 2.5rem;
+                    margin-bottom: 0.8rem;
+                }
+            }
+
+        }
+   }
+    .slick-slide{
+        min-height: 39.4rem;
+       
+           
+    }
+}
+

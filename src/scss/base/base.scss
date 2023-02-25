@@ -1,15 +1,99 @@
 :root{
+   scroll-behavior: smooth;
     scroll-padding-top: 11rem;
     --color-primary: #fff;
     --color-secondary: #221922;
     --color-tertiary: #EF98EC;
     --bkg-primary-color: #2E292A;
     --bkg-secondary-color: #fff;
+      --bkg-tertiary-color: #EF98EC;
       font-size: 62.5%;
 
      main{
         min-height: 80vh;
-        background-color: #EF98EC;
+       
      }
-    
+   .lds-title ,h1, h2,h3{
+      font-family: SawarabiMincho;
+      font-size: clamp(2.4rem, 2.4rem + 1.5vw, 4.1rem);
+      
+      font-weight: 400;
+      text-align: center;
+      
+      letter-spacing: 0.7rem;
+
+      &__primary{
+         color: var(--color-primary);
+      }
+      &__secondary{
+         color: var(--color-secondary);
+      }
+   }
+   section{
+      padding: 6.1rem 0.8rem;
+      max-width: 1920px;
+      margin: auto;
+      overflow: hidden;
+
+      @include media(medium){
+         padding: 6.1rem 7rem;
+      }
+     
+   }
+   p{
+      font-family: Rosario;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 2.5rem;
+      letter-spacing: 2.5%;
+      text-align: left;
+   }
+   .lds-btn{
+      display:inline-flex;
+      font-family: Rosario;
+      font-size: 2rem;
+      font-weight: 700;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1.5rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      cursor: pointer;
+
+      &-primary{
+         background-color: var(--bkg-tertiary-color);
+         color: var(--color-primary);
+         transition: 0.3s ease-in-out;
+         &:hover{
+            background-color: var(--color-primary);
+            color: var(--bkg-tertiary-color);
+         }
+      }
+      &-secondary{
+         background-color: var(--bkg-secondary-color);
+         color: var(--color-tertiary);
+         transition: 0.3s ease-in-out;
+         &:hover{
+            background-color: var(--color-tertiary);
+            color: var(--bkg-secondary-color);
+         }
+      }
+
+  
+
+   }
+       a{
+         font-family: Rosario ;
+         font-size: 1.8rem;
+         text-decoration: none;
+         color: var(--color-secondary);
+         transition: 0.3s ease-in-out;
+         &:hover{
+            color: var(--color-tertiary);
+         }
+      }
 }
+
+

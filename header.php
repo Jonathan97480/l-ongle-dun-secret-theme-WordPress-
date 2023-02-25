@@ -12,6 +12,7 @@ $pathTheme = get_template_directory_uri();
     <script type="text/javascript">
         const wp_curentUrl = '<?= home_url($wp->request); ?>';
     </script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <?= wp_head() ?>
     <title><?= get_bloginfo('name') ?></title>
 
@@ -32,11 +33,10 @@ $pathTheme = get_template_directory_uri();
             <nav class="lds-header__content__nav">
                 <ul class="lds-header__content__nav__list">
                     <li><a href="<?= home_url() ?>">Accueil</a></li>
-                    <li><a href="#about">À-propos</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#products">Nos produits </a></li>
-                    <li><a href="#appointment">Prendre un rendez vous </a></li>
-
+                    <li><a href="<?= home_url() . '/#about' ?>">À-propos</a></li>
+                    <li><a href="<?= home_url() . '/#services' ?>">Services</a></li>
+                    <li><a href="<?= home_url() . '/#products' ?>">Nos produits </a></li>
+                    <li><a href="<?= home_url() . '/#appointment' ?>">Prendre un rendez vous </a></li>
 
                     <li>
                         <?php
@@ -62,13 +62,13 @@ $pathTheme = get_template_directory_uri();
 
             <div class="lds-header__content__reseaux">
 
-                <a href="https://www.facebook.com/Alongledunsecret" target="_blank">
+                <a href="<?= get_theme_mod('facebook') ?>" target="_blank">
                     <img src="<?= $pathTheme . "./assets/images/logos_facebook.png" ?>" width="30" height="30" alt="Logo facebook">
                 </a>
-                <a href="https://www.instagram.com/a_l_ongle_d_un_secret/?igshid=ZDdkNTZiNTM%3D" target="_blank">
+                <a href="<?= get_theme_mod('instagram') ?>" target="_blank">
                     <img src="<?= $pathTheme . "./assets/images/logo_instagram.svg" ?>" width="30" height="30" alt="Logo instagram">
                 </a>
-                <a href="https://tiktok.com/@alongledunsecret" target="_blank">
+                <a href="<?= get_theme_mod('tiktok') ?>" target="_blank">
                     <img src="<?= $pathTheme . "./assets/images/logo_tiktok.webp" ?>" width="30" height="30" alt="Logo tiktok">
                 </a>
             </div>

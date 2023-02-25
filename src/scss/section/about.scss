@@ -1,0 +1,45 @@
+.lds-about{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 930px;
+        img{
+            object-fit: contain;
+        }
+       
+          @include media(medium){
+            flex-direction: row-reverse;
+                justify-content: flex-start;
+                align-items: center;
+            }
+       
+        gap: 4.8rem;
+        &__btn{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+
+            @include media(medium){
+                justify-content: flex-start;
+            }
+        }
+
+        &__info{
+            display: flex;
+            flex-direction: column;
+            gap: 4.8rem;
+            text-align: center;
+            
+        }
+    }
+}

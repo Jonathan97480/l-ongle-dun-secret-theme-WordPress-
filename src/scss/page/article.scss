@@ -1,7 +1,20 @@
-.lds-page{
+.lds-article{
     padding: 6.1rem 0.8rem;
     max-width: 1280px;
     margin: auto;
+    @include media(medium){
+         padding: 6.1rem 7rem;
+      }
+
+    .aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .alignleft {
+        float: left;
+        margin: 0.5em 1em 0.5em 0;
+    }
     img {
         height: auto;
         max-width: 100%;
@@ -9,14 +22,14 @@
     &__title{
         margin: 6.1rem 0;
     }
-   h1{
+    h1{
         margin-bottom: 6.1rem!important;
     }
     h2,h3,h4,h5,h6{
           text-align: unset;
-         margin: 1.6rem 0;
+         margin-top: 1.6rem;
+         margin-bottom: 0.8rem;
     }
- 
     h2{
         font-size: 2.5rem;
        
@@ -28,9 +41,10 @@
     }
     p{
         font-size: 1.8rem;
-        margin-bottom: 1.6rem;
+         margin-bottom: 1.6rem;
     }
+
+}
 article{
     padding: 6.1rem 0 ;
-}
 }

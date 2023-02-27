@@ -51,7 +51,7 @@ get_header();
 
 
     <div class="lds-about__content">
-        <img class="lds-about__pic" src="<?= $pathTheme . './assets/images/nancy-sergoynne.png' ?>" alt="Nancy Sergoynne photo profile" width="263" height="292">
+        <img class="lds-about__pic" src="<?= $pathTheme . '/assets/images/nancy-sergoynne.png' ?>" alt="Nancy Sergoynne photo profile" width="263" height="292">
         <div class="lds-about__content__info">
             <p>
                 Bienvenue à tous A l'ongle d'un secret ! Nous sommes un institut de beauté qui croit en l'utilisation de produits bio et vegan pour offrir les meilleurs soins possibles à nos clients.
@@ -89,22 +89,24 @@ get_header();
                     $cat = $value->name;
                 }
                 ?>
-                <div class="lds-products__card">
-                    <img class="lds-products__card__logoApprouve" src="<?= $pathTheme . './assets/images/logo-vegan-aprouve.png' ?>" width="58" height="68">
-                    <div class="lds-products__card__content">
-                        <img class="lds-products__card__content__cover" src="<?= get_the_post_thumbnail_url() ?>" alt="">
-                        <div>
-                            <h3><?= get_the_title() ?></h3>
-                            <p>
-                                <?= get_field('type_de_produit_') ?>
-                            </p>
-                            <p>
-                                <?= $cat ?>
-                            </p>
+                <a href="<?= get_the_permalink() ?>">
+                    <div class="lds-products__card">
+                        <img class="lds-products__card__logoApprouve" src="<?= $pathTheme . '/assets/images/logo-vegan-aprouve.png' ?>" width="58" height="68">
+                        <div class="lds-products__card__content">
+                            <img class="lds-products__card__content__cover" src="<?= get_the_post_thumbnail_url() ?>" alt="">
+                            <div>
+                                <h3><?= get_the_title() ?></h3>
+                                <p>
+                                    <?= get_field('type_de_produit_') ?>
+                                </p>
+                                <p>
+                                    <?= $cat ?>
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
+                </a>
             <?php endwhile; ?>
         <?php endif; ?>
 </section>
@@ -113,7 +115,7 @@ get_header();
     <h2 class="lds-title__secondary">-Prendre rendez-vous- </h2>
 
     <div class="lds-appointment__content">
-        <img class="lds-appointment__content__cover" src="<?= $pathTheme . './assets/images/Rendez-vous-cover.jpg' ?>" alt="Rendez-vous cover">
+        <img class="lds-appointment__content__cover" src="<?= $pathTheme . '/assets/images/Rendez-vous-cover.jpg' ?>" alt="Rendez-vous cover">
 
         <div class="lds-appointment__content__info">
             <p>Nous sommes ravis que vous envisagiez de prendre rendez-vous A l'ongle d'un secret ! Notre institut de beauté propose une large gamme de services de beauté et de bien-être, tous conçus pour vous aider à vous sentir détendu, rafraîchi et revitalisé.</p>
@@ -121,14 +123,14 @@ get_header();
             <div>
                 <h3>Par numéro téléphone </h3>
                 <a href="tel:+<?= get_theme_mod('phone') ?>">
-                    <img src="<?= $pathTheme . './assets/images/icon-phone.svg' ?>" alt="Icon pour numéro Téléphone">
+                    <img src="<?= $pathTheme . '/assets/images/icon-phone.svg' ?>" alt="Icon pour numéro Téléphone">
                     <span id="phone"> <?= get_theme_mod('phone') ?></span>
                 </a>
             </div>
             <div>
                 <h3>Par email</h3>
                 <a href="mailto:<?= get_theme_mod('email') ?>">
-                    <img src="<?= $pathTheme . './assets/images/icon-email.svg' ?>" alt="Icon pour email">
+                    <img src="<?= $pathTheme . '/assets/images/icon-email.svg' ?>" alt="Icon pour email">
                     <span id="email"> <?= get_theme_mod('email') ?></span>
                 </a>
             </div>

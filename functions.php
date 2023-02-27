@@ -3,6 +3,7 @@
 
 require_once('options/customize_theme.php');
 require_once('options/contactForm/contactForm.php');
+require_once('options/servicesDetails/servicesDetails.php');
 
 
 add_action('after_setup_theme', function () {
@@ -57,7 +58,8 @@ add_action('wp_enqueue_scripts', function () {
     wp_register_script('lds-appJs',  get_template_directory_uri() . '/assets/js/script.js', [], false, true);
     wp_register_script('lds-slick-script',  get_template_directory_uri() . '/assets/js/slick/slick.min.js', [], false, true);
     wp_register_script('lds-custom',  get_template_directory_uri() . '/assets/js/theme_customization.js', [], false, true);
-    /*  wp_enqueue_script('jquery'); */
+    wp_register_script('lds-jquery',  get_template_directory_uri() . '/assets/js/jquery/jquery-2.2.0.min.js', [], false, false);
+    wp_enqueue_script('lds-jquery');
     wp_enqueue_script('lds-appJs');
     wp_enqueue_script('lds-slick-script');
     wp_enqueue_script('lds-custom');

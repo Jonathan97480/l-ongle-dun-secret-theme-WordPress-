@@ -15,16 +15,16 @@ function lds_GetFooterForm()
             <h2>-Nos Réseaux sociaux- </h2>
             <span>
                 <a href="' . $facebook_url . '" target="_blank">
-                    <img src="' . $pathTheme . "./assets/images/logos_facebook.png" . '" width="30" height="30" alt="Logo facebook">
+                    <img src="' . $pathTheme . "/assets/images/logos_facebook.png" . '" width="30" height="30" alt="Logo facebook">
                     Facebook
                 </a>
 
                 <a href="' . $instagram_url . '" target="_blank">
-                    <img src="' . $pathTheme . "./assets/images/logo_instagram.svg" . '" width="30" height="30" alt="Logo instagram">
+                    <img src="' . $pathTheme . "/assets/images/logo_instagram.svg" . '" width="30" height="30" alt="Logo instagram">
                     Instagram
                 </a>
                 <a href="' . $tiktok_url . '" target="_blank">
-                    <img src="' . $pathTheme . "./assets/images/logo_tiktok.webp" . '" width="30" height="30" alt="Logo tiktok">
+                    <img src="' . $pathTheme . "/assets/images/logo_tiktok.webp" . '" width="30" height="30" alt="Logo tiktok">
                     Tiktok
                 </a>
             </span>

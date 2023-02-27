@@ -10,11 +10,23 @@
     
         @include media(medium){
             display: inline-flex;
-        justify-content: center;
+            flex-direction: row;
+            justify-content: center;
+         
+            height: 45rem;
+        
         }
-      
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            transform: scale(1.1);
+        }
+      }
     
     }
+   
    &__card{
         position: relative;
         background-color: var(--bkg-secondary-color) ;

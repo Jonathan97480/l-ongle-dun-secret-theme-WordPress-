@@ -12,7 +12,9 @@ $breakpoints:(
     'medium':(
         min-width: 992px
     ),
-
+     'largeL':(
+        min-width:1200px
+    ),
     'large':(
         min-width: 1400px
     )

@@ -1,0 +1,27 @@
+.lds-404{
+    padding: 0.8rem 0.8rem;
+    max-height: 900vh;
+    @include media(medium){
+        padding: 6.1rem 7rem;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        max-width:80rem ;
+        margin: auto;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            max-height: 30rem;
+            margin: auto;
+            @include media(largeL){
+               
+                max-height: unset;
+            }
+        }
+    }
+}

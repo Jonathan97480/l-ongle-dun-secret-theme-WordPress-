@@ -13,7 +13,11 @@
             $('#phone').text(newVal);
         });
     });
-
+    wp.customize('adresse', (value) => {
+        value.bind((newVal) => {
+            $('#adresse').text(newVal);
+        });
+    });
 
 
 

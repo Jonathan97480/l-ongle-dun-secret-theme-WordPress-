@@ -84,18 +84,22 @@ add_action('customize_register', function (WP_Customize_Manager $manager) {
 
     ]);
 
-    /* home Background */
-    /* add ooption change background image  */
-    /* $manager->add_setting('background_image', [
-        'default' => get_template_directory_uri() . '/assets/img/hero-home.jpg',
+    /* Adresse */
+    $manager->add_setting('adresse', [
+        'default' => '6 rue .......',
         'transport' => 'postMessage'
     ]);
 
-    $manager->add_control(new WP_Customize_Image_Control($manager, 'background_image', [
-        'label' => 'Image de fond',
-        'section' => 'hero-home',
-        'settings' => 'background_image',
-    ])); */
+
+    $manager->add_control('adresse', [
+        'section' => 'contact-link',
+        'seting' => 'adresse',
+        'label' => 'Votre numéro de téléphone',
+        'type' => 'text',
+
+    ]);
+
+
 });
 
 

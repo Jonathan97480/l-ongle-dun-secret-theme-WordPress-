@@ -100,6 +100,85 @@ add_action('customize_register', function (WP_Customize_Manager $manager) {
     ]);
 
 
+    /* Define section About */
+    $manager->add_section('About-section', [
+        'title' => 'Section à propos',
+    ]);
+
+    $manager->add_setting('Text-section1', [
+        'default' => "Bienvenue à tous A l'ongle d'un secret Nous sommes un Un institut qui mise sur les produits bio et vegan pour vous apporter le meilleur de la nature.",
+        'transport' => 'postMessage'
+    ]);
+
+    $manager->add_control('Text-section1', [
+        'section' => 'About-section',
+        'seting' => 'Text-section1',
+        'label' => 'Paragraphe 1 de la section à propos',
+        'type' => 'textarea',
+
+    ]);
+
+    $manager->add_setting('Text-section2', [
+        'default' => " Dans un monde où le temps passe trop vite, venez prendre une pause dans un environnement calme et serein un lieu paisible où tout le monde peut se sentir à l'aise et en harmonie.",
+        'transport' => 'postMessage'
+    ]);
+
+    $manager->add_control('Text-section2', [
+        'section' => 'About-section',
+        'seting' => 'Text-section2',
+        'label' => 'Paragraphe 2 de la section à propos',
+        'type' => 'textarea',
+
+    ]);
+
+    /* Define section Contact */
+    $manager->add_section('page-contact', [
+        'title' => 'Page contact',
+    ]);
+    $manager->add_setting('Text-headerContact1', [
+        'default' => " Bonjour et merci de prendre le temps de nous contacter !",
+        'transport' => 'postMessage'
+    ]);
+    $manager->add_control('Text-headerContact1', [
+        'section' => 'page-contact',
+        'seting' => 'Text-headerContact1',
+        'label' => "phrase d’accroche de la section contact",
+        'type' => 'textarea',
+
+    ]);
+    $manager->add_setting(
+        'Text-headerContact2',
+        [
+            'default' => "A l'ongle d'un secret , nous sommes ravis de pouvoir répondre à toutes vos questions et de vous aider à planifier votre visite dans notre institut de beauté. Nous sommes fiers de notre engagement envers la nature et la santé de nos clients, et nous sommes heureux de partager nos connaissances et notre expertise avec vous.",
+            'transport' => 'postMessage'
+        ]
+    );
+    $manager->add_control('Text-headerContact2', [
+        'section' => 'page-contact',
+        'seting' => 'Text-headerContact2',
+        'label' => "phrase d’accroche 2 de la section contact",
+        'type' => 'textarea',
+
+    ]);
+
+    /* Define section appointment */
+    $manager->add_section('appointment-section', [
+        'title' => 'Section Rendez-vous',
+    ]);
+    $manager->add_setting(
+        'Text-appointment',
+        [
+            'default' => "Nous sommes ravis que vous envisagiez de prendre rendez-vous A l'ongle d'un secret ! Notre institut de beauté propose une large gamme de services de beauté et de bien-être, tous conçus pour vous aider à vous sentir détendu et revitalisé.",
+            'transport' => 'postMessage'
+        ]
+    );
+    $manager->add_control('Text-appointment', [
+        'section' => 'appointment-section',
+        'seting' => 'Text-appointment',
+        'label' => "phrase d’accroche de la section rendez-vous",
+        'type' => 'textarea',
+
+    ]);
 });
 
 

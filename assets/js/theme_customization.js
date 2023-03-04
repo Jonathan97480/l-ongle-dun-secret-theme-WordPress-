@@ -18,8 +18,31 @@
             $('#adresse').text(newVal);
         });
     });
-
-
+    wp.customize('Text-section1', (value) => {
+        value.bind((newVal) => {
+            $('#Text-section1').text(newVal);
+        });
+    });
+    wp.customize('Text-section2', (value) => {
+        value.bind((newVal) => {
+            $('#Text-section2').text(newVal);
+        });
+    });
+    wp.customize('Text-appointment', (value) => {
+        value.bind((newVal) => {
+            $('#Text-appointment').text(newVal);
+        });
+    });
+    wp.customize('Text-headerContact1', (value) => {
+        value.bind((newVal) => {
+            $('#Text-headerContact1').text(newVal);
+        });
+    });
+    wp.customize('Text-headerContact2', (value) => {
+        value.bind((newVal) => {
+            $('#Text-headerContact2').text(newVal);
+        });
+    });
 
 
 })(jQuery)

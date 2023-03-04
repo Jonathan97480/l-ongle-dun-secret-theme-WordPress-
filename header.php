@@ -18,11 +18,11 @@ $pathTheme = get_template_directory_uri();
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@jonathanfrt9741">
     <meta name="twitter:title" content="<?= get_bloginfo('name') ?>">
-    <meta name="twitter:description" content="<?= get_bloginfo('description') ?>">
+    <meta name="twitter:description" content="Découvrez notre institut de massage, manucure et maquillage chez A l'ongle d'un secret ! Nous sommes spécialisés dans la vente et l'utilisation de produits de beauté bio et vegane pour vous offrir des soins respectueux de votre corps et de l'environnement. Prenez soin de vous tout en faisant un geste pour la planète. Réservez dès maintenant votre séance chez A l'ongle d'un secret.">
     <meta name="twitter:image" content="<?= $pathTheme . "/assets/images/logo_a_longle_dun_secret_n_title.png" ?>">
     <meta property="og:type" content="website">
     <meta property="og:title" content="<?= get_bloginfo('name') ?>">
-    <meta property="og:description" content="<?= get_bloginfo('description') ?>">
+    <meta property="og:description" content="Découvrez notre institut de massage, manucure et maquillage chez A l'ongle d'un secret ! Nous sommes spécialisés dans la vente et l'utilisation de produits de beauté bio et vegane pour vous offrir des soins respectueux de votre corps et de l'environnement. Prenez soin de vous tout en faisant un geste pour la planète. Réservez dès maintenant votre séance chez A l'ongle d'un secret.">
     <meta property="og:image" content="<?= $pathTheme . "/assets/images/logo_a_longle_dun_secret_n_title.png" ?>">
     <meta property="og:url" content="<?= home_url() ?>">
     <meta property="og:site_name" content="<?= get_bloginfo('name') ?>">
@@ -42,13 +42,13 @@ $pathTheme = get_template_directory_uri();
 
     <header class="lds-header">
         <div id="burger" class="lds-header__hamburger">
-            <img src="<?= $pathTheme . '/assets/images/icons_hamburger-menu.svg' ?>" width="50" height="50" alt="icon hamburger">
+            <img src="<?= $pathTheme . '/assets/images/icons_hamburger-menu.svg' ?>" width="50" height="50" alt="icon hamburger" loading="lazy">
         </div>
 
-        <div id="nav" class="lds-header__content lds-header__content-close">
+        <div id="nav" class="lds-header__content ">
 
             <a class="lds-header__content__logoLink" href="<?= home_url() ?>">
-                <img class="lds-header__content__logoLink__pic" src="<?= $pathTheme . "/assets/images/logo_a_longle_dun_secret_n_20230219_124822_0000.webp" ?>" width="41" height="60" alt="Logo a l’ongle dun secret">
+                <img class="lds-header__content__logoLink__pic" src="<?= $pathTheme . "/assets/images/logo_a_longle_dun_secret_n_20230219_124822_0000.webp" ?>" width="41" height="60" alt="Logo a l’ongle dun secret" loading="lazy">
             </a>
             <nav class="lds-header__content__nav">
                 <ul class="lds-header__content__nav__list">
@@ -83,13 +83,13 @@ $pathTheme = get_template_directory_uri();
             <div class="lds-header__content__reseaux">
 
                 <a href="<?= get_theme_mod('facebook') ?>" target="_blank">
-                    <img src="<?= $pathTheme . "/assets/images/logos_facebook.png" ?>" width="30" height="30" alt="Logo facebook">
+                    <img src="<?= $pathTheme . "/assets/images/logos_facebook.png" ?>" width="30" height="30" alt="Logo facebook" loading="lazy">
                 </a>
                 <a href="<?= get_theme_mod('instagram') ?>" target="_blank">
-                    <img src="<?= $pathTheme . "/assets/images/logo_instagram.svg" ?>" width="30" height="30" alt="Logo instagram">
+                    <img src="<?= $pathTheme . "/assets/images/logo_instagram.svg" ?>" width="30" height="30" alt="Logo instagram" loading="lazy">
                 </a>
                 <a href="<?= get_theme_mod('tiktok') ?>" target="_blank">
-                    <img src="<?= $pathTheme . "/assets/images/logo_tiktok.webp" ?>" width="30" height="30" alt="Logo tiktok">
+                    <img src="<?= $pathTheme . "/assets/images/logo_tiktok.webp" ?>" width="30" height="30" alt="Logo tiktok" loading="lazy">
                 </a>
             </div>
         </div>

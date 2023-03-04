@@ -15,7 +15,7 @@
      }
    .lds-title ,h1, h2,h3{
       font-family: SawarabiMincho;
-      font-size: clamp(2.4rem, 2.4rem + 1.5vw, 4.1rem);
+      font-size: clamp(2.4rem, 2.4rem + 1vw, 4.1rem);
       
       font-weight: 400;
       text-align: center;
@@ -65,7 +65,7 @@
       &-primary{
          background-color: var(--bkg-tertiary-color);
          color: var(--color-primary);
-         transition: 0.3s ease-in-out;
+         transition: 0.5s ease-in-out;
          &:hover{
             background-color: var(--color-primary);
             color: var(--bkg-tertiary-color);
@@ -74,7 +74,7 @@
       &-secondary{
          background-color: var(--bkg-secondary-color);
          color: var(--color-tertiary);
-         transition: 0.3s ease-in-out;
+         transition: 0.5s ease-in-out;
          &:hover{
             background-color: var(--color-tertiary);
             color: var(--bkg-secondary-color);

@@ -14,6 +14,7 @@
         justify-content: center;
         align-items: center;
         gap: 8.1rem;
+        padding: 0 0.8rem;
 
         @include media(medium){
             flex-direction: row;
@@ -52,6 +53,9 @@
         align-items: center;
         transition: all .3s;
         width: 100%;
+         @include media(medium){
+            font-size: clamp(0.8rem , 0.8rem + 0.5vw, 1.8rem);
+        }
         &:hover{
             color: var(--color-tertiary);
         }
@@ -59,9 +63,12 @@
     }
     h2{
         font-family: 'SawarabiMincho', sans-serif;
-        font-size:clamp(1.8rem , 1.8rem + 1.5vw, 2.0rem);
+        font-size:2rem;
         font-weight: 400;
         color: var(--color-primary);
+        @include media(medium){
+            font-size: clamp(1rem , 1rem + 0.5vw, 2.0rem);
+        }
     }
     &__copy{
         font-size: 1.8rem;

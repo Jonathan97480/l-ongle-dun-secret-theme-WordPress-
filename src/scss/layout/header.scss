@@ -9,7 +9,7 @@
     &__hamburger{
        
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         padding: 0 .1rem;
          @include media(medium){
             display: none;
@@ -31,11 +31,11 @@
         gap: 4.7rem;
         padding: 2rem 0;
         @include media(medium){
+            display: flex;
             position: relative;
             top: 0;
             width: auto;
             height: 8rem;
-            display: flex;
             flex-direction: row;
             margin: auto;
             justify-content: space-between;
@@ -59,13 +59,15 @@
                     a{
                         display: block;
                         font-family: SawarabiMincho;
-                        font-size: 1.8rem;
+                        font-size:1.8rem;
                         font-weight: 400;         
                         text-decoration: none;   
                         transition: all .3s;
                         color: var(--color-secondary);
                         text-align: center;
-                
+                        @include media(medium){
+                             font-size: clamp(1rem, 1rem + 0.5vw, 1.8rem);
+                        }
                         
                         &:hover{
                             color: var(--color-tertiary);
@@ -97,8 +99,9 @@
         }
 
         &-open{
-            display: flex;
+           display: flex!important;
             animation: openMenu .5s ease-in-out forwards;
+            z-index: 100;
             @include media(medium){
                 animation: none;
             }
@@ -114,9 +117,13 @@
 
     @keyframes openMenu {
         0% {
+              
             transform: translateX(-100%);
+
         }
+      
         100% {
+          
             transform: translateX(0);
         }
         

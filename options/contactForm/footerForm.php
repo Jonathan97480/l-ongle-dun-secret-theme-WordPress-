@@ -10,7 +10,13 @@ function lds_GetFooterForm()
 
     $pathTheme = get_template_directory_uri();
     $lds_footer = '<div class="lds-contact__footer" >
-    <p>Vous pouvez également nous contacter par téléphone au <a href="tel:' . $phone . '" >' . $phone . '</a> ou par email à l\'adresse: <a href="mailto:' . $email . '">' . $email . '</a></p>
+    <p>Vous pouvez également nous contacter par téléphone au
+    <span>
+    <img src="' . $pathTheme . '/assets/images/logo_mail.png " width="30" height="30" alt="Logo téléphone" loading="lazy" title="numéro de téléphone">
+    <a href="tel:' . $phone . '" >' . $phone . '</a></span> ou par email à l\'adresse:
+    <span>
+     <img src="' . $pathTheme . '/assets/images/logo_phone.png " width="30" height="30" alt="Logo téléphone" loading="lazy" title="adresse email">
+    <a href="mailto:' . $email . '">' . $email . '</a></span></p>
     <div class="lds-contact__footer__reseaux">
             <h2>-Nos Réseaux sociaux- </h2>
             <span>

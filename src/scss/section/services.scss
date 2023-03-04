@@ -1,7 +1,9 @@
 
 .lds-services{
     background: linear-gradient(207.51deg, #EA8E93 17.12%, #E6878D 51.07%, #DA7178 86.47%);
-
+    h1{
+        color: var( --color-primary);
+    }
     &__content{
         margin-top: 6.1rem;
         display:flex;

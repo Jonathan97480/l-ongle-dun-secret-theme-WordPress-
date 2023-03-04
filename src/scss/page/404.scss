@@ -1,6 +1,11 @@
 .lds-404{
     padding: 0.8rem 0.8rem;
-    max-height: 900vh;
+    
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
     @include media(medium){
         padding: 6.1rem 7rem;
     }
@@ -16,7 +21,7 @@
             width: 100%;
             height: auto;
             object-fit: cover;
-            max-height: 30rem;
+            max-height: 35rem;
             margin: auto;
             @include media(largeL){
                

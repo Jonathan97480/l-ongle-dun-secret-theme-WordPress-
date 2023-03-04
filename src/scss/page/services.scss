@@ -4,6 +4,16 @@
     justify-content: center;
     gap: 3.5rem;
     flex-wrap: wrap;
+    
+    a{
+        transition: 0.4s ease-in-out;
+          transform: scale(0.9);
+        &:hover{
+            color: var(--color-secondary);
+            transform: scale(1);
+        }
+
+    }
     @include media(largeL){
         justify-content: center;
         flex-direction: column;
@@ -25,14 +35,17 @@
         @include media(largeL){
             max-width: 107.7rem;
             min-height: 52.5rem;
-        max-height: 56.5rem;
+       
         }
         &__title{
             text-align: center;
             font-size: 40;
-            max-height: 8rem;
+            max-height: 10rem;
             overflow: hidden;
-            height: 8rem;
+            height: 10rem;
+            display: flex;
+            align-items: center;
+            padding: 0.8rem;
            
         }
 
@@ -46,13 +59,17 @@
           
            img{
                 width: 100%;
-                height: auto;
+                height: 30rem;
                 object-fit: cover;
+                min-height: 30rem;
                 max-height: 30rem;
                
                 @include media(largeL){
-                    max-width:45.4rem ;
+                    max-width:50%;
+                    min-width: 50%;
+                    width: 50%;
                     max-height: unset;
+                    height: 51.1rem;
                 }
            }
 
@@ -66,6 +83,8 @@
             gap: 1.5rem;
             @include media(largeL){
                 flex-direction: column;
+                justify-content: space-between;
+                height: 52.2rem;
               
             }
             p{

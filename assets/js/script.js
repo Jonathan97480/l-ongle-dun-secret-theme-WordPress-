@@ -6,8 +6,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (burger&&nav) {
         burger.addEventListener("click", function () {
-            nav.classList.toggle("lds-header__content-open");
-            nav.classList.toggle("lds-header__content-close");
+
+
+            if (nav.classList.contains("lds-header__content-close")) {
+
+                nav.classList.remove("lds-header__content-close");
+                nav.classList.add("lds-header__content-open");
+
+            } else if (nav.classList.contains("lds-header__content-open")) {
+
+                nav.classList.remove("lds-header__content-open");
+                nav.classList.add("lds-header__content-close");
+
+            } else {
+
+                nav.classList.add("lds-header__content-open");
+            }
+
         });
         nav.querySelectorAll("li").forEach(function (li) {
             li.addEventListener("click", function () {
